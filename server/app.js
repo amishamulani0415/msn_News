@@ -5,6 +5,8 @@ const cors = require("cors");
 const AppError = require("./utils/appError");
 const globalErrorHandler = require("./controllers/errorHandler");
 const newsRouter = require("./routes/newsRoutes");
+import AdminRouter from "./routes/admin.route.js";
+
 
 const app = express();
 
@@ -14,6 +16,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.use("/api/v1/msnclone", newsRouter);
+app.use("/api/v1/admin",AdminRouter)
 app.all("*", (req, res, next) => {
   next(new AppError(`The URL ${req.originalUrl} does not exist`, 404));
 });
