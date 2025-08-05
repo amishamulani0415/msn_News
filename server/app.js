@@ -6,7 +6,7 @@ const AppError = require("./utils/appError");
 const globalErrorHandler = require("./controllers/errorHandler");
 const newsRouter = require("./routes/newsRoutes");
 import AdminRouter from "./routes/admin.route.js";
-
+import UserRouter from "./routes/user.route.js"
 
 const app = express();
 
@@ -15,6 +15,7 @@ app.use(morgan("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
+app.use("/api/v1/user",UserRouter)
 app.use("/api/v1/msnclone", newsRouter);
 app.use("/api/v1/admin",AdminRouter)
 app.all("*", (req, res, next) => {
