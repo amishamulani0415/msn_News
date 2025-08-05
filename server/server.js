@@ -1,17 +1,19 @@
-const dotenv = require("dotenv");
-const mongoose = require("mongoose");
+import dotenv from "dotenv";
+import mongoose from "mongoose";
+import app from "./app.js"; // ".js" extension zaroori hai in ESM
 
+// Handle uncaught exceptions
 process.on("uncaughtException", (err) => {
   console.error("Uncaught Exception:", err);
   process.exit(1);
 });
 
-const app = require("./app");
-
+// Load environment variables
 dotenv.config({ path: "./config.env" });
 
 const port = process.env.PORT || 8080;
 
+// MongoDB connection function
 const connect = (uri) => {
   mongoose
     .connect(uri)
@@ -23,12 +25,15 @@ const connect = (uri) => {
       process.exit(1);
     });
 };
+
 connect(process.env.MONGO_URI);
 
+// Start the server
 const server = app.listen(port, () => {
   console.log(`App is running on port ${port}`);
 });
 
+// Handle unhandled promise rejections
 process.on("unhandledRejection", (err) => {
   console.log(err.name, err.message);
   server.close(() => {

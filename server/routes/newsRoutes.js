@@ -1,6 +1,6 @@
-const express = require("express");
-const newsController = require("../controllers/newsController");
-const upload = require("../middlewares/mediaUploads");
+import express from "express";
+import * as newsController from "../controllers/newsController.js";
+import upload from "../middlewares/mediaUploads.js";
 
 const router = express.Router();
 
@@ -15,4 +15,4 @@ router
   .patch(upload, newsController.updateNews)
   .delete(newsController.deleteNews);
 
-module.exports = router;
+export default router; // ✅ ESM default export

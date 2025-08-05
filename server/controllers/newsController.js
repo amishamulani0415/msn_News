@@ -1,20 +1,23 @@
-const News = require("../models/newsModel");
-const catchAsync = require("../utils/catchAsync");
-const AppError = require("../utils/appError");
+import News from "../models/newsModel.js";
+import catchAsync from "../utils/catchAsync.js";
+import AppError from "../utils/appError.js";
 
-exports.createNews = catchAsync(async (req, res, next) => {
+// Create News
+export const createNews = catchAsync(async (req, res, next) => {
   const newsTitle = req.body.input;
 
   if (!newsTitle) {
     return next(new AppError("News title is required", 400));
   }
+
   let mediaPath = null;
   if (req.file) {
     mediaPath = req.file.path;
   }
   // else {
-  //   return next(new AppError("Media file is required", 400)); ======== else is used if the media is required ========
+  //   return next(new AppError("Media file is required", 400));
   // }
+
   const description = req.body.description;
   if (!description) {
     return next(new AppError("Description is required", 400));
@@ -28,13 +31,12 @@ exports.createNews = catchAsync(async (req, res, next) => {
 
   res.status(201).json({
     status: "success",
-    data: {
-      news,
-    },
+    data: { news },
   });
 });
 
-exports.getAllNews = catchAsync(async (req, res, next) => {
+// Get all news
+export const getAllNews = catchAsync(async (req, res, next) => {
   const newsList = await News.find();
   res.status(200).json({
     status: "success",
@@ -43,16 +45,19 @@ exports.getAllNews = catchAsync(async (req, res, next) => {
   });
 });
 
-exports.getNews = catchAsync(async (req, res, next) => {
+// Get single news
+export const getNews = catchAsync(async (req, res, next) => {
   const news = await News.findById(req.params.id);
   if (!news) return next(new AppError("News not found", 404));
+
   res.status(200).json({
     status: "success",
     data: { news },
   });
 });
 
-exports.updateNews = catchAsync(async (req, res, next) => {
+// Update news
+export const updateNews = catchAsync(async (req, res, next) => {
   const updates = {};
 
   if (req.body.input) updates.newsTitle = req.body.input;
@@ -72,8 +77,10 @@ exports.updateNews = catchAsync(async (req, res, next) => {
   });
 });
 
-exports.deleteNews = catchAsync(async (req, res, next) => {
+// Delete news
+export const deleteNews = catchAsync(async (req, res, next) => {
   const news = await News.findByIdAndDelete(req.params.id);
   if (!news) return next(new AppError("News not found", 404));
+
   res.status(204).json({ status: "success", data: null });
 });

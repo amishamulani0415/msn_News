@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
 const newsSchema = new mongoose.Schema(
   {
@@ -20,9 +20,6 @@ const newsSchema = new mongoose.Schema(
       type: Date,
       default: Date.now,
     },
-
-    // add remaining fields as necessary
-    // e.g., content, author, date, etc.
   },
   {
     timestamps: true,
@@ -31,4 +28,4 @@ const newsSchema = new mongoose.Schema(
 
 const NewsModel = mongoose.model("News", newsSchema);
 
-module.exports = NewsModel;
+export default NewsModel; // ✅ ESM default export

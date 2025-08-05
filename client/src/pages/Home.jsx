@@ -25,6 +25,7 @@ const Home = () => {
         {news.map((item) => (
           <h2 key={item._id}>{item.newsTitle}</h2>
         ))}
+        welcome to msn news
       </div>
     </>
   );
