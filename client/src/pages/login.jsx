@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 function Login() {
    const [loading, setLoading] = useState(false);
-   const [email, setEmail] = useState("");
+   const [userInfo, setUserInfo] = useState("");
    const [password, setPassword] = useState("");
    const [error, setError] = useState("");
    const navigate = useNavigate();
@@ -17,7 +17,7 @@ function Login() {
          setLoading(true);
          const response = await axios.post(
             "http://localhost:5000/api/v1/user/login",
-            { email, password },
+            { userInfo, password },
             { withCredentials: true }
          );
 
@@ -68,10 +68,10 @@ function Login() {
                <div>
                   <label>Email</label>
                   <input
-                     type='email'
+                     type='text'
                      className='form-control'
-                     value={email}
-                     onChange={(e) => setEmail(e.target.value)}
+                     value={userInfo}
+                     onChange={(e) => setUserInfo(e.target.value)}
                      required
                   />
                </div>
@@ -95,3 +95,4 @@ function Login() {
 }
 
 export default Login;
+
