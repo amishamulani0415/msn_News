@@ -1,42 +1,16 @@
-import dotenv from "dotenv";
 import mongoose from "mongoose";
-import app from "./app.js"; // ".js" extension zaroori hai in ESM
+import dotenv from "dotenv";
+import app from "./app.js";  // ✅ make sure app.js path sahi hai
 
-// Handle uncaught exceptions
-process.on("uncaughtException", (err) => {
-  console.error("Uncaught Exception:", err);
-  process.exit(1);
-});
-
-// Load environment variables
 dotenv.config({ path: "./config.env" });
 
-const port = process.env.PORT || 8080;
+const DB = process.env.MONGO_URI;
+const PORT = process.env.PORT || 5000;
 
-// MongoDB connection function
-const connect = (uri) => {
-  mongoose
-    .connect(uri)
-    .then(() => {
-      console.log("DB connection Successful");
-    })
-    .catch((err) => {
-      console.error(`DB connection failed: ${err.message}`);
-      process.exit(1);
-    });
-};
-
-connect(process.env.MONGO_URI);
-
-// Start the server
-const server = app.listen(port, () => {
-  console.log(`App is running on port ${port}`);
-});
-
-// Handle unhandled promise rejections
-process.on("unhandledRejection", (err) => {
-  console.log(err.name, err.message);
-  server.close(() => {
-    process.exit(1);
-  });
-});
+mongoose
+  .connect(DB)
+  .then(() => {
+    console.log("✅ MongoDB connected");
+    app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
+  })
+  .catch((err) => console.error("MongoDB Error:", err));

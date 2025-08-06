@@ -1,86 +1,81 @@
-import News from "../models/newsModel.js";
-import catchAsync from "../utils/catchAsync.js";
-import AppError from "../utils/appError.js";
+// server/controllers/newsController.js
+import News from "../models/News.js";
 
-// Create News
-export const createNews = catchAsync(async (req, res, next) => {
-  const newsTitle = req.body.input;
+// CREATE
+export const createNews = async (req, res) => {
+  try {
+    const { headline, description, category } = req.body;
 
-  if (!newsTitle) {
-    return next(new AppError("News title is required", 400));
+    if (!headline || !description) {
+      return res.status(400).json({ error: "Headline and Description required" });
+    }
+
+    const imageURL = req.file ? `/mediaFiles/${req.file.filename}` : null;
+
+    const news = await News.create({
+      headline,
+      description,
+      category,
+      imageURL,
+    });
+
+    res.status(201).json({ status: "success", data: news });
+  } catch (err) {
+    console.error("Create News Error:", err.message);
+    res.status(500).json({ error: "Failed to create news" });
   }
+};
 
-  let mediaPath = null;
-  if (req.file) {
-    mediaPath = req.file.path;
+// GET ALL
+export const getAllNews = async (req, res) => {
+  try {
+    const news = await News.find().sort({ createdAt: -1 });
+    res.json({ status: "success", results: news.length, data: news });
+  } catch (err) {
+    console.error("Get All Error:", err.message);
+    res.status(500).json({ error: "Failed to fetch news" });
   }
-  // else {
-  //   return next(new AppError("Media file is required", 400));
-  // }
+};
 
-  const description = req.body.description;
-  if (!description) {
-    return next(new AppError("Description is required", 400));
+// GET SINGLE
+export const getNewsById = async (req, res) => {
+  try {
+    const news = await News.findById(req.params.id);
+    if (!news) return res.status(404).json({ error: "News not found" });
+
+    res.json({ status: "success", data: news });
+  } catch (err) {
+    console.error("Get Single Error:", err.message);
+    res.status(500).json({ error: "Failed to fetch news" });
   }
+};
 
-  const news = await News.create({
-    newsTitle,
-    description,
-    media: mediaPath,
-  });
+// UPDATE
+export const updateNews = async (req, res) => {
+  try {
+    const updates = { ...req.body };
+    if (req.file) updates.imageURL = `/mediaFiles/${req.file.filename}`;
 
-  res.status(201).json({
-    status: "success",
-    data: { news },
-  });
-});
+    const updatedNews = await News.findByIdAndUpdate(req.params.id, updates, { new: true });
 
-// Get all news
-export const getAllNews = catchAsync(async (req, res, next) => {
-  const newsList = await News.find();
-  res.status(200).json({
-    status: "success",
-    results: newsList.length,
-    data: { news: newsList },
-  });
-});
+    if (!updatedNews) return res.status(404).json({ error: "News not found" });
 
-// Get single news
-export const getNews = catchAsync(async (req, res, next) => {
-  const news = await News.findById(req.params.id);
-  if (!news) return next(new AppError("News not found", 404));
+    res.json({ status: "success", data: updatedNews });
+  } catch (err) {
+    console.error("Update Error:", err.message);
+    res.status(500).json({ error: "Failed to update news" });
+  }
+};
 
-  res.status(200).json({
-    status: "success",
-    data: { news },
-  });
-});
+// DELETE
+export const deleteNews = async (req, res) => {
+  try {
+    const deleted = await News.findByIdAndDelete(req.params.id);
+    if (!deleted) return res.status(404).json({ error: "News not found" });
 
-// Update news
-export const updateNews = catchAsync(async (req, res, next) => {
-  const updates = {};
-
-  if (req.body.input) updates.newsTitle = req.body.input;
-  if (req.body.description) updates.description = req.body.description;
-  if (req.file) updates.media = req.file.path;
-
-  const news = await News.findByIdAndUpdate(req.params.id, updates, {
-    new: true,
-    runValidators: true,
-  });
-
-  if (!news) return next(new AppError("News not found", 404));
-
-  res.status(200).json({
-    status: "success",
-    data: { news },
-  });
-});
-
-// Delete news
-export const deleteNews = catchAsync(async (req, res, next) => {
-  const news = await News.findByIdAndDelete(req.params.id);
-  if (!news) return next(new AppError("News not found", 404));
-
-  res.status(204).json({ status: "success", data: null });
-});
+    res.json({ status: "success", message: "News deleted" });
+  } catch (err) {
+    console.error("Delete Error:", err.message);
+    res.status(500).json({ error: "Failed to delete news" });
+  }
+};

@@ -1,9 +1,10 @@
+// server/middlewares/mediaUpload.js
 import multer from "multer";
 import path from "path";
 import fs from "fs";
 import { fileURLToPath } from "url";
 
-// __dirname replacement in ESM
+// __dirname for ESM
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -13,6 +14,7 @@ if (!fs.existsSync(uploadDirectory)) {
   fs.mkdirSync(uploadDirectory, { recursive: true });
 }
 
+// Multer Storage
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
     cb(null, uploadDirectory);
@@ -23,6 +25,7 @@ const storage = multer.diskStorage({
   },
 });
 
+// File Type Check
 function checkFileType(file, cb) {
   const filetypes = /jpeg|jpg|png|gif/;
   const extname = filetypes.test(path.extname(file.originalname).toLowerCase());
@@ -37,10 +40,10 @@ function checkFileType(file, cb) {
 
 const upload = multer({
   storage,
-  limits: { fileSize: 5000000 },
+  limits: { fileSize: 5 * 1024 * 1024 }, // 5MB
   fileFilter: (req, file, cb) => {
     checkFileType(file, cb);
   },
 }).single("mediaFile");
 
-export default upload; // ✅ ESM default export
+export default upload;
