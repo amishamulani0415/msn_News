@@ -1,18 +1,23 @@
+// server/routes/newsRoutes.js
 import express from "express";
-import * as newsController from "../controllers/newsController.js";
-import upload from "../middlewares/mediaUploads.js";
+import upload from "../middlewares/mediaUpload.js";
+import {
+  createNews,
+  getAllNews,
+  getNewsById,
+  updateNews,
+  deleteNews,
+} from "../controllers/newsController.js";
 
 const router = express.Router();
 
-router
-  .route("/msnews")
-  .post(upload, newsController.createNews)
-  .get(newsController.getAllNews);
+router.route("/")
+  .post(upload, createNews)    // Create news with optional image
+  .get(getAllNews);            // Get all news
 
-router
-  .route("/msnews/:id")
-  .get(newsController.getNews)
-  .patch(upload, newsController.updateNews)
-  .delete(newsController.deleteNews);
+router.route("/:id")
+  .get(getNewsById)            // Get single news
+  .put(upload, updateNews)     // Update news
+  .delete(deleteNews);         // Delete news
 
 export default router;

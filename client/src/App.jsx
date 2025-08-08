@@ -7,19 +7,24 @@ import AdminPanel from "./pages/adminPanel";
 import Login from "./pages/login.jsx";
 import Register from "./pages/register.jsx";
 import Dashboard from "./pages/dashboard.jsx";
+import NewsForm from "./components/NewsForm.jsx";
+import Navbar from "./components/Navbar.jsx";
+import NewsLayout from "./components/NewsLayout.jsx";
 
 function App() {
   return (
     <Router>
+      <Navbar />
+      <NewsLayout />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/admin" element={<Admin />} />
+        <Route path="/admin" element={<AdminLogin />} />
+        <Route path="/admin/panel" element={<AdminPanel />} />
         <Route path="/edit/:id" element={<EditNews />} />
-        <Route path='/admin' element={<AdminLogin />} />
-        <Route path='/admin/panel' element={<AdminPanel />} />
-        <Route path='/login' element={<Login />} />
-            <Route path='/register' element={<Register />} />
-            <Route path='/dashboard' element={<Dashboard />} />
+        <Route path="/form" element={<NewsForm />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/Login" element={<Login />} />
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </Router>
   );
