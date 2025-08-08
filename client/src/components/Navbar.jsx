@@ -40,11 +40,11 @@ const Navbar = () => {
       <li><Link to="/weather" className="hover:text-blue-600" onClick={() => setIsOpen(false)}>Weather</Link></li>
       <li><Link to="/for-you" className="hover:text-blue-600" onClick={() => setIsOpen(false)}>For You</Link></li>
       <li>
-        <button onClick={handleAddNews} className="hover:text-blue-600">Add News</button>
+        <button onClick={handleAddNews} className="text-blue-600 hover:underline">Add News</button>
       </li>
       {!isLoggedIn ? (
         <>
-          <li><button onClick={handleLogin} className="text-green-600 hover:underline">Login</button></li>
+          <li><button onClick={handleLogin} className="text-blue-600 hover:underline">Login</button></li>
           <li><button onClick={handleSignup} className="text-blue-600 hover:underline">Sign Up</button></li>
         </>
       ) : (
@@ -72,7 +72,7 @@ const Navbar = () => {
           <input
             type="text"
             className="bg-transparent ml-2 outline-none text-sm"
-            placeholder="Search (coming soon)"
+            placeholder="Search "
             disabled
           />
         </div>
@@ -85,9 +85,20 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Dropdown */}
+      {/* Mobile Dropdown with Search */}
       {isOpen && (
         <div className="md:hidden px-4 pb-4">
+          {/* Search for Mobile */}
+          <div className="flex items-center bg-gray-100 px-3 py-1 rounded-full mb-4">
+            <Search className="w-4 h-4 text-gray-500" />
+            <input
+              type="text"
+              className="bg-transparent ml-2 outline-none text-sm w-full"
+              placeholder="Search (coming soon)"
+              disabled
+            />
+          </div>
+
           <ul className="flex flex-col gap-3 text-gray-700 font-medium bg-white shadow rounded p-4">
             {navLinks}
           </ul>
