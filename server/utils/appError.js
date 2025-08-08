@@ -10,4 +10,4 @@ class AppError extends Error {
   }
 }
 
-export default AppError; // ✅ Default export for ESM
+export default AppError;

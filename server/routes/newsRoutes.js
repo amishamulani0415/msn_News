@@ -15,4 +15,4 @@ router
   .patch(upload, newsController.updateNews)
   .delete(newsController.deleteNews);
 
-export default router; // ✅ ESM default export
+export default router;
