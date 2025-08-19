@@ -9,13 +9,12 @@ import Register from "./pages/register.jsx";
 import Dashboard from "./pages/dashboard.jsx";
 import NewsForm from "./components/NewsForm.jsx";
 import Navbar from "./components/Navbar.jsx";
-import NewsLayout from "./components/NewsLayout.jsx";
-
+import NewsCard from "./components/NewsCard.jsx";
 function App() {
   return (
     <Router>
       <Navbar />
-      <NewsLayout />
+      <NewsCard />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/admin" element={<AdminLogin />} />
