@@ -1,0 +1,428 @@
+[
+  
+  {
+    "headline": "India Launches New Satellite for Climate Research",
+    "description": "ISRO successfully launched a new weather satellite into orbit.",
+    "category": "News",
+    "imageURL": "https://source.unsplash.com/800x600/?satellite,space"
+  },
+  {
+    "headline": "Parliament Passes New Education Bill",
+    "description": "The bill introduces major reforms in higher education.",
+    "category": "News",
+    "imageURL": "https://source.unsplash.com/800x600/?parliament,law"
+  },
+  {
+    "headline": "Supreme Court Rules on Landmark Case",
+    "description": "This decision will affect thousands of landowners nationwide.",
+    "category": "News",
+    "imageURL": "https://source.unsplash.com/800x600/?judge,court"
+  },
+  {
+    "headline": "New Metro Line Inaugurated in Delhi",
+    "description": "A new metro corridor will ease commuting across NCR.",
+    "category": "News",
+    "imageURL": "https://source.unsplash.com/800x600/?metro,delhi"
+  },
+  {
+    "headline": "COVID-19 Cases Rise Again in Some States",
+    "description": "Officials urge caution and promote booster vaccinations.",
+    "category": "News",
+    "imageURL": "https://source.unsplash.com/800x600/?covid,vaccine"
+  },
+  {
+    "headline": "India's Defense Budget Increases by 10%",
+    "description": "The government plans more modernization of the armed forces.",
+    "category": "News",
+    "imageURL": "https://source.unsplash.com/800x600/?army,india"
+  },
+  {
+    "headline": "New Policies Announced for Startups",
+    "description": "Startups in India to benefit from tax relief and subsidies.",
+    "category": "News",
+    "imageURL": "https://source.unsplash.com/800x600/?startup,tech"
+  },
+  {
+    "headline": "Government Pushes Digital India Initiatives",
+    "description": "New projects will enhance rural internet access.",
+    "category": "News",
+    "imageURL": "https://source.unsplash.com/800x600/?digital,technology"
+  },
+  {
+    "headline": "Traffic Rules Amended for Two-Wheelers",
+    "description": "Stricter helmet rules and e-challan systems implemented.",
+    "category": "News",
+    "imageURL": "https://source.unsplash.com/800x600/?traffic,helmet"
+  },
+  {
+    "headline": "Census 2025 Preparations Begin",
+    "description": "Authorities start survey planning across the country.",
+    "category": "News",
+    "imageURL": "https://source.unsplash.com/800x600/?census,data"
+  },
+
+
+  {
+    "headline": "India Wins Test Series Against England",
+    "description": "A thrilling series concluded with India taking the final match.",
+    "category": "Sports",
+    "imageURL": "https://source.unsplash.com/800x600/?cricket"
+  },
+  {
+    "headline": "Neeraj Chopra Wins Gold Again",
+    "description": "India’s javelin star secures first place in World Athletics Meet.",
+    "category": "Sports",
+    "imageURL": "https://source.unsplash.com/800x600/?javelin,olympics"
+  },
+  {
+    "headline": "Messi Shines in Copa América",
+    "description": "Lionel Messi leads Argentina to another victory.",
+    "category": "Sports",
+    "imageURL": "https://source.unsplash.com/800x600/?football"
+  },
+  {
+    "headline": "Women’s Cricket Team Wins Asia Cup",
+    "description": "India dominates final against Sri Lanka.",
+    "category": "Sports",
+    "imageURL": "https://source.unsplash.com/800x600/?women,cricket"
+  },
+  {
+    "headline": "India's Chess Team Tops Global Rankings",
+    "description": "Indian grandmasters dominate international tournaments.",
+    "category": "Sports",
+    "imageURL": "https://source.unsplash.com/800x600/?chess,india"
+  },
+  {
+    "headline": "Wrestling Federation Elections Held",
+    "description": "New leadership promises reforms in training.",
+    "category": "Sports",
+    "imageURL": "https://source.unsplash.com/800x600/?wrestling"
+  },
+  {
+    "headline": "Asian Games Preparations in Full Swing",
+    "description": "Athletes enter final phase of training.",
+    "category": "Sports",
+    "imageURL": "https://source.unsplash.com/800x600/?athlete,track"
+  },
+  {
+    "headline": "IPL 2025: Teams Begin Pre-Season Training",
+    "description": "New signings and strategy drills start.",
+    "category": "Sports",
+    "imageURL": "https://source.unsplash.com/800x600/?ipl,stadium"
+  },
+  {
+    "headline": "Boxing Federation Gets New Sponsor",
+    "description": "Private brands support Olympic medal hopefuls.",
+    "category": "Sports",
+    "imageURL": "https://source.unsplash.com/800x600/?boxing"
+  },
+  {
+    "headline": "Table Tennis Stars Head to Championship",
+    "description": "Top Indian players to face global contenders.",
+    "category": "Sports",
+    "imageURL": "https://source.unsplash.com/800x600/?tabletennis"
+  },
+
+
+  {
+    "headline": "BGMI Returns to India with New Rules",
+    "description": "Gamers rejoice as BGMI relaunches with limited playtime.",
+    "category": "Play",
+    "imageURL": "https://source.unsplash.com/800x600/?bgmi,gaming"
+  },
+  {
+    "headline": "GTA VI Trailer Drops, Internet Explodes",
+    "description": "Rockstar Games confirms 2025 release date.",
+    "category": "Play",
+    "imageURL": "https://source.unsplash.com/800x600/?gta,video-games"
+  },
+  {
+    "headline": "Minecraft Hits 300M Players Worldwide",
+    "description": "Still one of the most popular games ever made.",
+    "category": "Play",
+    "imageURL": "https://source.unsplash.com/800x600/?minecraft"
+  },
+  {
+    "headline": "Fortnite Introduces New Mythic Weapons",
+    "description": "Epic Games surprises fans with Season 5 launch.",
+    "category": "Play",
+    "imageURL": "https://source.unsplash.com/800x600/?fortnite"
+  },
+  {
+    "headline": "Free Fire India Launch Announced",
+    "description": "Garena brings a localized version for Indian players.",
+    "category": "Play",
+    "imageURL": "https://source.unsplash.com/800x600/?freefire"
+  },
+  {
+    "headline": "PlayStation 6 Concept Leaked Online",
+    "description": "Fans speculate specs, design, and release window.",
+    "category": "Play",
+    "imageURL": "https://source.unsplash.com/800x600/?playstation"
+  },
+  {
+    "headline": "E-Sports Federation Announces Mega Tournament",
+    "description": "Top Indian streamers to compete this August.",
+    "category": "Play",
+    "imageURL": "https://source.unsplash.com/800x600/?esports,arena"
+  },
+  {
+    "headline": "PUBG Mobile India Ranks Surge",
+    "description": "Competitive scene heats up after comeback.",
+    "category": "Play",
+    "imageURL": "https://source.unsplash.com/800x600/?pubg"
+  },
+  {
+    "headline": "Valorant Mobile Beta Now Available",
+    "description": "Riot Games launches closed beta in select regions.",
+    "category": "Play",
+    "imageURL": "https://source.unsplash.com/800x600/?valorant"
+  },
+  {
+    "headline": "Game Developers Conference 2025 Announced",
+    "description": "India will have dedicated panel discussions.",
+    "category": "Play",
+    "imageURL": "https://source.unsplash.com/800x600/?gaming,conference"
+  },
+   {
+    "headline": "Stock Market Hits Record High",
+    "description": "Stock Market Hits Record High - Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "category": "Money",
+    "imageURL": "https://source.unsplash.com/800x600/?business"
+  },
+  {
+    "headline": "RBI Keeps Repo Rate Unchanged",
+    "description": "RBI Keeps Repo Rate Unchanged - Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "category": "Money",
+    "imageURL": "https://source.unsplash.com/800x600/?business"
+  },
+  {
+    "headline": "Gold Prices Surge in International Market",
+    "description": "Gold Prices Surge in International Market - Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "category": "Money",
+    "imageURL": "https://source.unsplash.com/800x600/?finance"
+  },
+  {
+    "headline": "Rupee Weakens Against Dollar",
+    "description": "Rupee Weakens Against Dollar - Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "category": "Money",
+    "imageURL": "https://source.unsplash.com/800x600/?money"
+  },
+  {
+    "headline": "Indian Startups Raise $1B in Funding",
+    "description": "Indian Startups Raise $1B in Funding - Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "category": "Money",
+    "imageURL": "https://source.unsplash.com/800x600/?finance"
+  },
+  {
+    "headline": "Cryptocurrency Regulation Bill in Parliament",
+    "description": "Cryptocurrency Regulation Bill in Parliament - Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "category": "Money",
+    "imageURL": "https://source.unsplash.com/800x600/?business"
+  },
+  {
+    "headline": "Banks Announce Festive Loan Offers",
+    "description": "Banks Announce Festive Loan Offers - Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "category": "Money",
+    "imageURL": "https://source.unsplash.com/800x600/?business"
+  },
+  {
+    "headline": "New Tax Rules for Freelancers",
+    "description": "New Tax Rules for Freelancers - Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "category": "Money",
+    "imageURL": "https://source.unsplash.com/800x600/?business"
+  },
+  {
+    "headline": "Paytm Launches New Investment Platform",
+    "description": "Paytm Launches New Investment Platform - Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "category": "Money",
+    "imageURL": "https://source.unsplash.com/800x600/?money"
+  },
+  {
+    "headline": "Income Tax Return Deadline Extended",
+    "description": "Income Tax Return Deadline Extended - Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "category": "Money",
+    "imageURL": "https://source.unsplash.com/800x600/?finance"
+  },
+  {
+    "headline": "Heavy Rains Expected in Mumbai",
+    "description": "Heavy Rains Expected in Mumbai - Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "category": "Weather",
+    "imageURL": "https://source.unsplash.com/800x600/?cloud"
+  },
+  {
+    "headline": "Delhi Records Hottest July Day",
+    "description": "Delhi Records Hottest July Day - Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "category": "Weather",
+    "imageURL": "https://source.unsplash.com/800x600/?rain"
+  },
+  {
+    "headline": "Cyclone Warning Issued for Odisha",
+    "description": "Cyclone Warning Issued for Odisha - Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "category": "Weather",
+    "imageURL": "https://source.unsplash.com/800x600/?rain"
+  },
+  {
+    "headline": "IMD Predicts Normal Monsoon",
+    "description": "IMD Predicts Normal Monsoon - Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "category": "Weather",
+    "imageURL": "https://source.unsplash.com/800x600/?cloud"
+  },
+  {
+    "headline": "Snowfall Covers Himachal Peaks",
+    "description": "Snowfall Covers Himachal Peaks - Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "category": "Weather",
+    "imageURL": "https://source.unsplash.com/800x600/?weather"
+  },
+  {
+    "headline": "Heatwave Alert for Rajasthan",
+    "description": "Heatwave Alert for Rajasthan - Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "category": "Weather",
+    "imageURL": "https://source.unsplash.com/800x600/?rain"
+  },
+  {
+    "headline": "Chennai Flooded After Torrential Rain",
+    "description": "Chennai Flooded After Torrential Rain - Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "category": "Weather",
+    "imageURL": "https://source.unsplash.com/800x600/?weather"
+  },
+  {
+    "headline": "Western Disturbance Brings Chill",
+    "description": "Western Disturbance Brings Chill - Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "category": "Weather",
+    "imageURL": "https://source.unsplash.com/800x600/?cloud"
+  },
+  {
+    "headline": "Kerala Receives Excess Rainfall",
+    "description": "Kerala Receives Excess Rainfall - Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "category": "Weather",
+    "imageURL": "https://source.unsplash.com/800x600/?rain"
+  },
+  {
+    "headline": "Air Quality Improves in NCR",
+    "description": "Air Quality Improves in NCR - Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "category": "Weather",
+    "imageURL": "https://source.unsplash.com/800x600/?cloud"
+  },
+  {
+    "headline": "Netflix Releases New Web Series",
+    "description": "Netflix Releases New Web Series - Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "category": "Watch",
+    "imageURL": "https://source.unsplash.com/800x600/?cinema"
+  },
+  {
+    "headline": "Blockbuster Movie Breaks Records",
+    "description": "Blockbuster Movie Breaks Records - Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "category": "Watch",
+    "imageURL": "https://source.unsplash.com/800x600/?entertainment"
+  },
+  {
+    "headline": "Amazon Prime Adds Classic Films",
+    "description": "Amazon Prime Adds Classic Films - Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "category": "Watch",
+    "imageURL": "https://source.unsplash.com/800x600/?entertainment"
+  },
+  {
+    "headline": "Reality Show Finale Trends Online",
+    "description": "Reality Show Finale Trends Online - Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "category": "Watch",
+    "imageURL": "https://source.unsplash.com/800x600/?tv"
+  },
+  {
+    "headline": "Oscar Nominations Announced",
+    "description": "Oscar Nominations Announced - Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "category": "Watch",
+    "imageURL": "https://source.unsplash.com/800x600/?entertainment"
+  },
+  {
+    "headline": "Bollywood Stars Promote New Films",
+    "description": "Bollywood Stars Promote New Films - Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "category": "Watch",
+    "imageURL": "https://source.unsplash.com/800x600/?tv"
+  },
+  {
+    "headline": "YouTube Channel Hits 100M Subs",
+    "description": "YouTube Channel Hits 100M Subs - Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "category": "Watch",
+    "imageURL": "https://source.unsplash.com/800x600/?cinema"
+  },
+  {
+    "headline": "OTT Platforms See Surge in Users",
+    "description": "OTT Platforms See Surge in Users - Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "category": "Watch",
+    "imageURL": "https://source.unsplash.com/800x600/?cinema"
+  },
+  {
+    "headline": "Documentary on Indian History Released",
+    "description": "Documentary on Indian History Released - Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "category": "Watch",
+    "imageURL": "https://source.unsplash.com/800x600/?entertainment"
+  },
+  {
+    "headline": "Short Films Win International Awards",
+    "description": "Short Films Win International Awards - Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "category": "Watch",
+    "imageURL": "https://source.unsplash.com/800x600/?cinema"
+  },
+  {
+    "headline": "Flipkart Big Billion Days Announced",
+    "description": "Flipkart Big Billion Days Announced - Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "category": "Shopping",
+    "imageURL": "https://source.unsplash.com/800x600/?sale"
+  },
+  {
+    "headline": "Amazon Great Indian Sale Live Now",
+    "description": "Amazon Great Indian Sale Live Now - Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "category": "Shopping",
+    "imageURL": "https://source.unsplash.com/800x600/?ecommerce"
+  },
+  {
+    "headline": "Myntra Offers Up to 80% Discount",
+    "description": "Myntra Offers Up to 80% Discount - Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "category": "Shopping",
+    "imageURL": "https://source.unsplash.com/800x600/?sale"
+  },
+  {
+    "headline": "Tata Neu Launches Exclusive Deals",
+    "description": "Tata Neu Launches Exclusive Deals - Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "category": "Shopping",
+    "imageURL": "https://source.unsplash.com/800x600/?shopping"
+  },
+  {
+    "headline": "Smartphones Dominate Online Sales",
+    "description": "Smartphones Dominate Online Sales - Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "category": "Shopping",
+    "imageURL": "https://source.unsplash.com/800x600/?ecommerce"
+  },
+  {
+    "headline": "Local Brands See Growth in Tier-2 Cities",
+    "description": "Local Brands See Growth in Tier-2 Cities - Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "category": "Shopping",
+    "imageURL": "https://source.unsplash.com/800x600/?ecommerce"
+  },
+  {
+    "headline": "Shoppers Prefer Eco-Friendly Packaging",
+    "description": "Shoppers Prefer Eco-Friendly Packaging - Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "category": "Shopping",
+    "imageURL": "https://source.unsplash.com/800x600/?shopping"
+  },
+  {
+    "headline": "Festive Season Boosts E-Commerce",
+    "description": "Festive Season Boosts E-Commerce - Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "category": "Shopping",
+    "imageURL": "https://source.unsplash.com/800x600/?sale"
+  },
+  {
+    "headline": "Cashback Offers on UPI Payments",
+    "description": "Cashback Offers on UPI Payments - Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "category": "Shopping",
+    "imageURL": "https://source.unsplash.com/800x600/?sale"
+  },
+  {
+    "headline": "Online Furniture Market Expands Rapidly",
+    "description": "Online Furniture Market Expands Rapidly - Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "category": "Shopping",
+    "imageURL": "https://source.unsplash.com/800x600/?ecommerce"
+  }
+ 
+]
